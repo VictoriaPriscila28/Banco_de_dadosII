@@ -1,0 +1,32 @@
+Elabora  os  diagramas  das modelagens  de  entidade  relacionamento(MER) e modelagem relacional(MR)dos
+ minimundos(domínios de negócio) abaixo: Usar BRModelo para o modelo entidade relacionamento(MER).
+ Usar o MySQL Workbenchpara o modelorelacional(MR).
+
+ Obs.:Podem explorare complementar cada  minimundo  com  mais  requisitos e características que você julgue necessário.
+
+ Minimundo:Oficina Mecânica-Sistema de Gestão de Ordens de Serviço: O  sistema  de  gestão  de  ordens  de  serviço  é 
+  desenvolvido  para  otimizar  o controle e gerenciamento das atividades em uma oficina mecânica, onde os clientes apresentam 
+  seus veículos para reparos ou revisões periódicas.Entidades Principais:
+
+  •Clientes:  Os  proprietários  dos  veículos  que  recorrem  à  oficina  para serviços.  
+  Cada  cliente  é  identificado  por  um  código  único  e  possui informações como nome, endereço e telefone de contato.
+  •Veículos:  Os  automóveis  trazidos  pelos  clientes.  Cada  veículo  é associado  a  um  cliente  e  possui  um  código,  
+  uma  placa  e  uma descrição.•Mecânicos: A equipe de profissionais responsável pela execução dos serviços  nos  veículos.  
+  Cada  mecânico  é  identificado  por  um  código exclusivo  e  possui  informações  pessoais  como  nome,  endereço  e especialidade.
+  •Ordens de Serviço (OS): Representam os pedidos de trabalho para cada veículo. Cada OS é caracterizada por um número único, data de emissão, 
+  valor total estimado e data prevista para conclusão. Uma OS contém  detalhes  sobre  os  serviços  a  serem  realizados,  incluindo informações 
+  sobre mão de obra e peças necessárias.•Serviços:Descrevem  as  atividades  que  devem  ser  executadas  nos veículos. Cada serviço é associado a 
+  uma equipe de mecânicos e pode aparecer em várias ordens de serviço.•Peças:Componentes  que  podem  ser  necessários  para  a  execução dos  serviços. 
+    Cada  tipo  de  peça  tem  um  nome,  um  código  de referência   e   um   custo   associado.   Uma   mesma   peça   pode   ser requerida em várias ordens de serviço.
+   Fluxo de Funcionamento:•Um cliente traz um veículo à oficina para reparo ou revisão.•Uma  equipe  de  mecânicos  é  designada  para  avaliar  o  veículo  e identificar os 
+   serviços necessários.•Com  base  na  avaliação,  é  preenchida  uma  Ordem  de  Serviço  (OS) contendo  detalhes  dos  serviços,  mão  de  obra  e  peças  necessárias, além de 
+   uma data estimada de conclusão.•O  valor  de  cada  serviço  é  calculado  consultando  uma  tabela  de referência de mão de obra, somado ao custo das peças requeridas.
+   •A OS é apresentada 
+   ao cliente para aprovação.•Após  a  autorização  do  cliente,  a  mesma  equipe  de  mecânicos responsável pela avaliação executa os serviços.
+   •Ao concluir os trabalhos, a OS é atualizada com a data de conclusão e o valor final.
+   •O cliente é notificado para buscar o veículo.
+   •Toda a informação relacionada a clientes, veículos, mecânicos, ordens de  serviço,  serviços  e  peças  é  mantida  em  um  banco  de  dados 
+relacional para registro e futura referência.
+•O  sistema  de  gestão  visa  aprimorar  a  eficiência  operacional  da oficina,    garantindo    uma    melhor   
+ organização    das    atividades, rastreabilidade   dos   serviços   prestados   e   controle   dos   custos envolvidos em cada ordem de serviço.
+ Bom Exercício
